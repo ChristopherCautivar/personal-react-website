@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Personal-React-Website
+
+A basic react website created by using this video as a guide: https://www.youtube.com/watch?v=hQAHSlTtcmY. I already have some experience from my classes in a similar framework (Angular), so I'm hoping to use this simple project as a base to eventually create a website where I can host or demo most of my work on a platform as a service, such as Heroku.
