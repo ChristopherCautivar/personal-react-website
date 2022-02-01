@@ -75,6 +75,14 @@ A basic react website created by using this video as a guide: https://www.youtub
 
 ## Next Steps
 Now that I've completed the basic tutorial, much of my angular and webdev knowledge is coming back to me. My next steps will be:
-* Deploy to Heroku
+* ~~Deploy to Heroku~~
 * Integrate a React router
 * Create a Habit tracker
+* ~~Create a Release that contains all original code~~
+    * ~~Remove unnecessary boilerplate code that has been commented out~~
+* Containerize this app
+* Display Github projects as "products"
+    * Implement a cart which lets users "buy" the projects
+        * Use a fictional currency
+    * This should give me practice with API's within React, among other key concepts
+    * Either host projects or display their README's which should have demo gifs displayed
