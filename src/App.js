@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
 // use the useState hook to update the page anytime its state changes
 // use the useRef hook to allow access to document elements that have references
 import React, { useState, useRef, useEffect } from 'react';
@@ -12,25 +10,6 @@ import { v4 as uuidv4 } from 'uuid';
 const LOCAL_STORAGE_KEY='todoApp.todos'
 
 function App() {
-  // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.js</code> and save to reload.
-  //       </p>
-  //       <a
-  //         className="App-link"
-  //         href="https://reactjs.org"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Learn React
-  //       </a>
-  //     </header>
-  //   </div>
-  // );
-
   // use object destructuring to store the todos retrieved and the function to run anytime the todos 
   // change. By using a key, only the changed todo will be rerendered
   // it seems the code runs pretty much real time thanks mostly to managing state
