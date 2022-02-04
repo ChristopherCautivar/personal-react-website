@@ -60,18 +60,18 @@ export default function TodoList() {
 
   // return an array of Todo components corresponding to each todo in todoProp
   return (
-    <>
-      {/* react functional component will be rendered here and passed the todos as a prop. We also
-          pass the toggleTodo function as a prop, through TodoList, down to Todo, in order to access
-          the specific todo id, rather than querying for the id, or storing it in html */}
-      {todos.map(todo => <Todo key={todo.id} toggleTodo={toggleTodo} todo={todo}/>)}
+    <div className='Component'>
       {/* create an input element that has a ref that will correspond to a variable */}
       <input ref={todoNameRef} type="text" />
       <button onClick={handleAddTodo}>Add Todo</button>
       <button onClick={handleClearTodos}>Clear Complete</button>
+      {/* react functional component will be rendered here and passed the todos as a prop. We also
+          pass the toggleTodo function as a prop, through TodoList, down to Todo, in order to access
+          the specific todo id, rather than querying for the id, or storing it in html */}
+      {todos.map(todo => <Todo key={todo.id} toggleTodo={toggleTodo} todo={todo}/>)}
       {/* notice how you can insert the results of code into divs and it will render them in real
           time due to state control, probably */}
       <div>{todos.filter(todo => !todo.complete).length} left to do</div>
-    </>
+    </div>
   );
 }
