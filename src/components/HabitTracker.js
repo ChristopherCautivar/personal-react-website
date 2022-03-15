@@ -11,8 +11,15 @@ export default function HabitTracker() {
   const [habits, setHabits] = useState(["this habit"])
 
   // a habit component will have a name, a calendar, and an id
+  // { id=uuidv4(), habitName:"", calendar:[cal] }
   // a calendar component will have a month-year name, and days
+  // {}
   // a day component will have a number and the state of the habit
+  //
+  // OR
+  // { "month-year":[habits]}
+  // { habit:cal }
+  // { cal:[tracked]}
 
   function handleAddHabit(e){
     const name = habitName.current.value
