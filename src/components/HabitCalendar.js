@@ -4,8 +4,9 @@ import HabitDay from './HabitDay';
 function track(){
 }
 
-function makeCalendar(size, dayStart, mEnd){
-  let days = []
+function makeCalendar(size, dayStart, mEnd, habitDays){
+  // reminder, a day looks like {id: uuidv4(), complete: false}
+  const days = []
   for(let i = 0; i <= size; i++){
     // create all habitDay components
     // if day is before or after month create empty item
@@ -16,6 +17,7 @@ function makeCalendar(size, dayStart, mEnd){
     }
   }
   console.log(days)
+  // days array finished
   let cal = []
   let row = []
   for(let i = 1; i <= days.length; i++){
@@ -35,7 +37,7 @@ function makeCalendar(size, dayStart, mEnd){
   return cal
 }
 
-export default function HabitCalendar({ monthSelected }) {
+export default function HabitCalendar({ monthSelected, habitDays }) {
   const [year, month] = monthSelected.split("-").map(e=>parseInt(e))
   const lastDate = new Date(year, month, 0)
   const firstDate = new Date(year, month-1)
@@ -44,7 +46,7 @@ export default function HabitCalendar({ monthSelected }) {
   return (
     <table>
       <tbody>
-        {makeCalendar(calendarSize, firstDate.getDay(), lastDate.getDate())}
+        {makeCalendar(calendarSize, firstDate.getDay(), lastDate.getDate(), habitDays)}
       </tbody>
     </table>
   );
