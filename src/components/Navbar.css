@@ -1,0 +1,15 @@
+.nav-link{
+    font-size: 2em;
+    color: aliceblue;
+    text-decoration: none;
+}
+.curr-page{
+    font-size: 3em;
+    color:darkturquoise;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}

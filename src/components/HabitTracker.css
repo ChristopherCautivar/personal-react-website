@@ -3,11 +3,22 @@ table {
     margin-right: auto;
 }
 .large-input{
-    font-size: 24px;
+    font-size: 0.8em;
 }
-.main-content{
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+button.untracked,
+button.tracked{
+    height: 2em;
+    width: 2em;
+    padding: 0;
+}
+
+.tracked {
+    background-color:darkturquoise;
+}
+
+button:disabled{
+    height: 2em;
+    width: 2em;
+    padding: 0;
 }
