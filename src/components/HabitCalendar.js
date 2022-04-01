@@ -15,7 +15,7 @@ export default function HabitCalendar({ monthSelected, habitDays, trackDay }) {
         // reminder, a day looks like {id: uuidv4(), day: # or null tracked: false}
         // if day is before or after month create empty item
         if(i <= dayStart || i > (mEnd + dayStart)){
-          habitDays.push({id:uuidv4(), day:null, tracked:false})
+          habitDays.push({id:uuidv4(), day:"\u00A0", tracked:false})
         } else {
           habitDays.push({id:uuidv4(), day:i-dayStart, tracked:false})
         }

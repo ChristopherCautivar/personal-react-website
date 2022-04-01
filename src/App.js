@@ -1,7 +1,5 @@
 // import our component
 import TodoList from './components/TodoList';
-import HeaderComponent from './components/HeaderComponent';
-import FooterComponent from './components/FooterComponent';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
@@ -15,7 +13,6 @@ function App() {
   return (
     // use a fragment (empty element) to return the elements nested within
     <div className='App'>
-      <HeaderComponent/>
       <BrowserRouter>
         <Navbar/>
         <Routes>
@@ -24,7 +21,6 @@ function App() {
           <Route path="/habittracker" element={<HabitTracker/>}/>
         </Routes>
       </BrowserRouter>
-      <FooterComponent/>
     </div>
   );
 }

@@ -42,10 +42,10 @@
 }
 
 .Component {
-  height: 100%;
-}
-
-nav {
-  width: 98vw;
-  margin: 5px;
+  width: 50%;
+  margin: auto;
+  background-color: azure;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 10px;
 }
